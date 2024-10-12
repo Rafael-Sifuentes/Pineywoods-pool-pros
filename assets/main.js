@@ -54,6 +54,16 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 
+
+function trackPhoneCallClick() {
+  gtag('event', 'CTA_Event', {
+    'event_category': 'Engagement',  // Optional category
+    'event_label': 'Phone Call',   // Optional label
+  });
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
   gsap.registerPlugin(ScrollTrigger);
 });
