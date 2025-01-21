@@ -286,10 +286,6 @@ img{
     font-weight: var(--font-bold);
 }
 
-.nav-logo img{
-    width: 132px;
-}
-
 /* -================================= MOBILE NAVIGATION CSS ================================- */
 @media screen and (max-width: 1023px){
 
@@ -298,7 +294,7 @@ img{
     }
 
     .nav-logo img{
-        width: 100px;
+        width: 64px;
     }
 
     .nav-list{
@@ -775,6 +771,7 @@ img{
 }
 
 .client-review{
+    position: relative;
     height: 200px;
 }
 
@@ -837,6 +834,24 @@ img{
     height: 100%;
     border-radius: var(--border-radius);
     object-fit: cover;
+}
+
+.gallery-photo-info{
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+    width: 64px;
+    height: max-content;
+    border-radius: 8px;
+    padding: .5rem 0;
+    text-align: center;
+    background-color: var(--text-color-b);
+}
+
+.gallery-photo-info p{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-regular);
+    color: var(--text-color-w);
 }
 
 .gallery-navigation-buttons{
