@@ -19,8 +19,13 @@ function goToLinkOne(){
 }
 
 function goToLinkTwo(){
-    let url = 'https://pwpoolpros.com/#contact'
+    let url = 'https://pwpoolpros.com/services/index.html#packages'
     window.open(url, '_blank')  
+}
+
+function goToLinkThree(){
+  let url = 'https://g.page/r/CQeMRNhcR3TTEAI/review'
+  window.open(url, '_blank')  
 }
 
 
