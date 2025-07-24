@@ -4,7 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Pineywoods Pool Professionals",
+            "image": "https://pwpoolpros.com/assets/img/home-img.png",
+            "serviceArea": [
+              {
+                "@type": "ServiceArea",
+                "name": "Nacogdoches County",
+                "geo": {
+                  "@type": "GeoCircle",
+                  "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 31.5744,
+                    "longitude": -94.6555
+                  },
+                  "geoRadius": 50
+                }
+              }
+            ],
+            "telephone": "+19366454968",
+            "url": "https://pwpoolpros.com/",
+            "openingHours": [
+              "Mo-Fr 09:00-17:00"
+            ],
+            "description": "Pool cleaners located in Nacogdoches county",
+            "keywords": "Pool cleaners, pool repairs, pool services",
+            "services": [
+              {
+                "@type": "Service",
+                "name": "Weekly / bi-weekly cleaning",
+                "description": "Skimming, brushing, vacuuming, cleaning filters, emptying baskets, and balancing chemicals."
+              },
+              {
+                "@type": "Service",
+                "name": "Chemical balancing & water testing",
+                "description": "Maintain the correct levels of chlorine, pH, and other chemicals for a safe and comfortable swimming experience."
+              },
+              {
+                "@type": "Service",
+                "name": "Pool maintenance & plumbing repairs",
+                "description": "Address issues with pumps, filters, heaters, and other pool equipment to ensure optimal functionality."
+              }
+            ],
+            "review": [
+              {
+                "@type": "Review",
+                "author": "Jerri B",
+                "reviewBody": "Awesome work, dependable, very professional, experienced and a hometown favorite."
+              },
+              {
+                "@type": "Review",
+                "author": "Susan",
+                "reviewBody": "Cody does such an amazing job cleaning our pool! Highly recommend Pineywoods Pool Professionals!"
+              },
+              {
+                "@type": "Review",
+                "author": "David R",
+                "reviewBody": "Cody is quick to respond and knowledgeable regarding pools. Great service."
+              },
+              {
+                "@type": "Review",
+                "author": "Sherry M",
+                "reviewBody": "Great service and reasonable prices. Would recommend Pineywoods Pool Professionals for all your pool needs."
+              }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+19366454968",
+              "email": "info@pwpoolpros.com",
+              "contactOption": "TollFree",
+              "areaServed": "Nacogdoches County, TX",
+              "availableLanguage": "English"
+            }
+          }
+    </script>
+    <script src="https://unpkg.com/@mux/mux-player"></script>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/IMG/Favicon.png" type="image/x-icon">
     <!-- REMIX ICONS -->
@@ -13,18 +90,544 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- COMPONENT CSS -->
     <link rel="stylesheet" href="assets/styles.css">
-    <title>Pineywods Pool proffesionals</title>
-    <meta name="description" content=""> 
-    <meta title="keywords" content="">
+    <title>Pineywoods Pool Professionals | Nacogdoches TX</title>
+    <meta name="description" content="Pool cleaning in Nacogdoches Texas"> 
+    <meta title="keywords" content="Pool cleaners, pool repairs, pool services, green pool cleaning">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-04NX46B76D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-04NX46B76D');
+</script>
 <body>
 
-    <div class="img-container"><img src="assets/img/code-logo.png" alt="ETX Logo"></div>
-    
-    <h2>This site is under development</h2>
-    <h4>by ETX <b>Software</b></h4>
 
-    <p>pwpoolpros.com</p>
+    <!-- NAVIGATION ==================================================================================== -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <!-- Logo -->
+            <a href="#" class="nav-logo"><img src="assets/img/Footer-logo.png" alt=""></a>
+
+            <!-- Desktop Menu Links -->
+            <div class="desktop-nav">
+                <div class="desktop-nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#faq" class="nav-link">FAQ's</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </div>
+            </div>
+
+            <!-- Desktop CTA Button -->
+            <div class="cta-button-wrapper">
+                 <a href="#contact" class="cta-button">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="mobile-menu-button-container transition">
+                <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg id="hamburger-icon" class="block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu, show/hide based on menu state -->
+        <div class="transition" id="mobile-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#faq" class="nav-link">FAQ's</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#reviews" class="nav-link">Contact</a>
+            <div onclick="callNumber()" class="cta-button-wrapper">
+                <a href="tel:9363716146" class="cta-button">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- =============================================================================================== -->
+
+    <!-- HOME SECTION ================================================================================== -->
+    <section class="home section" id="home">
+        <div class="home-container container flex">
+
+            <div class="home-frame-one flex-column">
+                <h5 class="home-subtitle top">Your Nacogdoches County pool team</h5>
+                <h1 class="home-title top">Crystal clear pools, & hastle free maintenance</h1>
+                <button onclick="scrollToSection('about')" class="button home-button transition top"><a href="#about">Dive in</a></button>
+
+                <ul class="home-list flex">
+                    <li class="home-list-item flex left"><i class="ri-checkbox-circle-fill"></i><p>Locally owned & operated</p></li>
+                    <li class="home-list-item flex left"><i class="ri-checkbox-circle-fill"></i><p>Affordable & transparent</p></li>
+                    <li class="home-list-item flex left"><i class="ri-checkbox-circle-fill"></i><p>Flexiable schedualing</p></li>
+                </ul>
+            </div>
+
+            <div class="home-img-container bottom"><img src="assets/img/home-img.png" alt="Home image"></div>
+        </div>
+    </section>
+    <!-- =============================================================================================== -->
+
+    <main>
+
+        <!-- ABOUT SECTION ========================================================================== -->
+        <section class="about section" id="about">
+
+            <div class="about-container container flex-column">
+                <div class="section-accent about-accent"><p>About us</p></div>
+                <h4 class="about-title">
+                    Families all across Nacogdoches county trust <span>Pineywoods Pool Professionals</span> for their pool cleaning and repair needs. The team is dedicated to keeping your pool sparkling clean, safe, and well-maintained for your peace of mind.
+                </h4>
+
+                <div class="about-frame-one flex">
+                    <div class="about-card-one flex left"><h5>We have</h5><h3>Over 7 years of experience.</h3></div>
+                    <div class="about-frame-two flex">
+                        <div class="about-card-two flex-column top"><h6>Clients report</h6><h5>100% Client satisfaction</h5></div>
+                        <div class="about-card-three flex-column bottom"><h6>We are</h6><h5>Locally owned & operated</h5></div>
+                    </div>
+                    <div class="about-img-container right"><img src="assets/img/about-img.png" alt="About image"></div>
+                </div>
+            </div>
+
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- SERVICES SECTION =========================================================================== -->
+        <section class="services section" id="services">
+
+            <div class="services-container container flex-column">
+                <div class="section-accent services-accent"><p>Services</p></div>
+                <h2 class="section-title services-title">Comprehensive services for all of your pool care needs.</h2>
+
+                <ul class="services-selector-container flex">
+                    <li class="service-selector flex-center active bottom" data-filter=".service-one"><h6>Pool cleanings</h6></li>
+                    <li class="service-selector flex-center bottom" data-filter=".service-two"><h6>Chemical services</h6></li>
+                    <li class="service-selector flex-center bottom" data-filter=".service-three"><h6>Maintenance plans</h6></li>
+                </ul>
+
+                <div class="service-cards-container flex-column">
+                    <div class="service-frame-one service-card service-one flex">
+                        <ul class="service-list flex">
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Skimming</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Tile brushing</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Filter cleaning</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Vaccuming</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Water testing</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Equipment checks</h5></li>
+                        </ul>
+                        <div class="service-frame-one-img"><img src="assets/img/service-img-1.png" alt=""></div>
+                    </div>
+
+                    <div class="service-frame-two service-card service-frame-one service-two flex">
+                        <ul class="service-list flex">
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Shock treatments</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Green pool restoration</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Stain removals</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Chemical balance</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Algae prevention</h5></li>
+                            <li class="service-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h5>Salt water maintenance</h5></li>
+                        </ul>
+                        <div class="service-frame-one-img"><img src="assets/img/service-img-2.png" alt=""></div>
+                    </div>
+
+                    <ul class="service-packages-container service-card service-three flex">
+                        <li class="service-package primary-service-package flex-column">
+                            <h4>Premier</h4>
+                            <ul class="service-package-list flex-column">
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Professional cleaning</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Tile scrubbing</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Vacuuming</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>System backwash</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Basic chemical check</h6></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="service-package flex-column">
+                            <h4>Premier plus</h4>
+                            <ul class="service-package-list flex-column">
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Everything in premier</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Advanced chemical check</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Debris removal from equipment</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Thorough equipment inspection </h6></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="service-package flex-column">
+                            <h4>Executive</h4>
+                            <ul class="service-package-list flex-column">
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Everything in premier plus</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Deck debris removal</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Stone sealing if applicable</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>Ant & wasp treatment around equipment</h6></li>
+                                <li class="service-package-list-item flex"><i class="ri-checkbox-blank-circle-fill"></i><h6>10% off hourly rate</h6></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-button-container flex">
+                    <h5>First responders, Military, and teachers get 10% !</h5>
+                    <button onclick="scrollToSection('faq')" class="button service-button transition"><a href="#faq">View more</a></button>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- FAQ SECTION ============================================================================= -->
+        <section class="faq section" id="faq">
+            <div class="faq-container container flex-column">
+                <div class="section-accent faq-accent"><p>FAQ's</p></div>
+                <h2 class="section-title faq-title">Have questions ? We have answers.</h2>
+
+                <ul class="faq-list flex">
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>How much do your services cost?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>Pricing depends on your pool's size and service type. <b>Contact us for a free estimate !</b></p></div>
+                    </li>
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>What is included in a regular pool cleaning?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>Skimming, brushing, vacuuming, cleaning filters, emptying baskets, and balancing chemicals.</p></div>
+                    </li>
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>How often should I clean my pool?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>We recommend weekly cleanings during the swimming season, but it depends on usage and weather.</p></div>
+                    </li>
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>What areas do you service?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>We serve all of Nacogdoches county. That includes <b>Nacogdoches, Garrison, Cushing, Chireno, Appleby, and Redfield</b></p></div>
+                    </li>
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>How do I know if my pool equipment needs repairs ?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>Signs include unusual noises, leaks, or reduced water circulation. Contact us for an inspection.</p></div>
+                    </li>
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>What types of pools do you service ?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>We service in-ground, chlorine, and saltwater pools. We do <b>Not</b> service above ground pools at this time.</p></div>
+                    </li>
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>Do I need to be home for the service?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>No, as long as we have access to your pool, you don't need to be home.</p></div>
+                    </li>
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>How can I schedule a service?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>Schedule through our email, or by phone at <b>936.371.6146</b></p></div>
+                    </li>
+
+                    <li class="faq-card flex-column transition">
+                        <div class="faq-card-question flex">
+                            <button class="faq-toggle transition flex-center"><i class="ri-add-line"></i></button>
+                            <h5>What payment methods do you accept?</h5>
+                        </div>
+
+                        <div class="faq-answer-wrapper"><p>We accept credit card, debit cards, online payments, or cash</p></div>
+                    </li>
+                </ul>
+
+                <div class="faq-button-container flex">
+                    <button onclick="scrollToSection('gallery')" class="faq-button transition button"><a href="#gallery">View our gallery</a></button>
+                    <a href="#reviews"><h5>See what clients have said</h5></a>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- GALLERY SECTION =========================================================================== -->
+        <section class="gallery section" id="gallery">
+            <div class="gallery-container container flex-column">
+                <div class="section-accent gallery-accent"><p>Gallery</p></div>
+                <h2 class="gallery-title section-title">Dive into our gallery</h2>
+
+                <div class="gallery-frame-one flex-column">
+                    <div class="video-container">
+                        <mux-player
+                            class="video"
+                            stream-type="on-demand"
+                            playback-id="W7B3k2C2P01qY1w1rHfs717TLE9vcyaSlgzfZC3LksVQ"
+                            accent-color="#236DF6">
+                        </mux-player>
+                    </div>
+
+                    <ul class="swiper-wrapper">
+                        <li class="gallery-card flex-column swiper-slide">
+                            <div class="gallery-img"><img src="assets/img/gallery-img-1.png" alt=""></div>
+                            <h5>Before</h5>
+                        </li>
+
+                        <li class="gallery-card flex-column swiper-slide">
+                            <div class="gallery-img"><img src="assets/img/gallery-img-2.png" alt=""></div>
+                            <h5>After</h5>
+                        </li>
+
+                        <li class="gallery-card flex-column swiper-slide">
+                            <div class="gallery-img"><img src="assets/img/gallery-img-3.png" alt=""></div>
+                            <h5>Before</h5>
+                        </li>
+
+                        <li class="gallery-card flex-column swiper-slide">
+                            <div class="gallery-img"><img src="assets/img/gallery-img-4.png" alt=""></div>
+                            <h5>After</h5>
+                        </li>
+
+                        <li class="gallery-card flex-column swiper-slide">
+                            <div class="gallery-img"><img src="assets/img/gallery-img-5.png" alt=""></div>
+                            <h5>Before</h5>
+                        </li>
+
+                        <li class="gallery-card flex-column swiper-slide">
+                            <div class="gallery-img"><img src="assets/img/gallery-img-6.png" alt=""></div>
+                            <h5>After</h5>
+                        </li>
+
+                        <li class="gallery-card flex-column swiper-slide">
+                            <div class="gallery-img"><img src="assets/img/gallery-img-7.png" alt=""></div>
+                            <h5>Before</h5>
+                        </li>
+
+                        <li class="gallery-card flex-column swiper-slide">
+                            <div class="gallery-img"><img src="assets/img/gallery-img-8.png" alt=""></div>
+                            <h5>After</h5>
+                        </li>
+                    </ul>
+
+                    <div class="gallery-swiper-buttons-container flex">
+                        <ul class="gallery-pagination"></ul>
+
+                        <div class="button-container flex">
+                            <button class="gallery-swiper-prev flex-center"><i class="ri-arrow-left-s-line"></i></button>
+                            <button class="gallery-swiper-next flex-center"><i class="ri-arrow-right-s-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- REVIEWS SECTION =========================================================================== -->
+        <section class="reviews section" id="reviews">
+            <div class="reviews-container container flex-column">
+
+                <div class="section-accent reviews-accent"><p>Reviews</p></div>
+                <h2 class="reviews-title section-title">Don't just take our word for it.</h2>
+
+                <ul class="swiper-wrapper">
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-frame-one flex-column"><h5>Jerri B.</h5><p>Awesome work, dependable, very professional, experienced and a hometown favorite.</p></div>
+                        <div class="review-card-frame-two flex">
+                            <ul class="stars-container flex">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                            <i class="ri-google-fill review-card-icon"></i>
+                        </div>
+                    </li>
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-frame-one flex-column"><h5>Susan</h5><p>Cody does such an amazing job cleaning our pool! Highly recommend Pineywoods Pool Professionals!</p></div>
+                        <div class="review-card-frame-two flex">
+                            <ul class="stars-container flex">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                            <i class="ri-google-fill review-card-icon"></i>
+                        </div>
+                    </li>
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-frame-one flex-column"><h5>Kami B.</h5><p>Great service and not overpriced. Will definitely recommend this local company to everyone needing pool service/maintenance.</p></div>
+                        <div class="review-card-frame-two flex">
+                            <ul class="stars-container flex">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                            <i class="ri-facebook-box-fill review-card-icon"></i>
+                        </div>
+                    </li>
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-frame-one flex-column"><h5>Bart R.</h5><p>I have been through 5-6 pool companies now, and by far Cody Barlow has been the most proficient and professional.</p></div>
+                        <div class="review-card-frame-two flex">
+                            <ul class="stars-container flex">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                            <i class="ri-facebook-box-fill review-card-icon"></i>
+                        </div>
+                    </li>
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-frame-one flex-column"><h5>David R.</h5><p>Cody is quick to respond and knowledgeable regarding pools. Great service.</p></div>
+                        <div class="review-card-frame-two flex">
+                            <ul class="stars-container flex">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                            <i class="ri-google-fill review-card-icon"></i>
+                        </div>
+                    </li>
+
+                    <li class="review-card swiper-slide flex-column">
+                        <div class="review-card-frame-one flex-column"><h5>Sherry M.</h5><p>Great service and reasonable prices. Would recommend Pineywoods Pool Professionals for all your pool needs.</p></div>
+                        <div class="review-card-frame-two flex">
+                            <ul class="stars-container flex">
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                                <li><i class="ri-star-fill"></i></li>
+                            </ul>
+                            <i class="ri-google-fill review-card-icon"></i>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="review-buttons-container flex">
+                    <button class="review-prev flex-center"><i class="ri-arrow-left-s-line"></i></button>
+                    <button class="review-next flex-center"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+
+                <button onclick="openReview()" class="review-button button transition"><a href="https://g.page/r/CQeMRNhcR3TTEBM/review" target="_blank">Leave a review !</a></button>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+        <!-- CONTACT SECTION =========================================================================== -->
+        <section class="contact section" id="contact">
+
+            <div class="contact-container container flex-column">
+
+                <div class="contact-accent section-accent"><p>Contact</p></div>
+                <h2 class="section-title contact-title">Ready for a crystal clear pool this summer ?</h2>
+
+                <div class="contact-images-container flex">
+                    <div class="contact-img-container desktop-only"><img src="assets/img/contact-img-2.png" alt=""></div>
+                    <div class="contact-img-container top"><img src="assets/img/contact-img-1.png" alt=""></div>
+                    <div class="contact-img-container desktop-only"><img src="assets/img/contact-img-3.png" alt=""></div>
+                </div>
+
+                <div class="contact-buttons-container flex">
+                    <button onclick="callNumber()" class="contact-button button transition"><a href="tel:9363716146">936.371.6146</a></button>
+                    <a class="contact-button-alt transition" href="mailto:info@pwpoolpros.com">info@pwpoolpros.com</a>
+                </div>
+            </div>
+        </section>
+        <!-- =========================================================================================== -->
+
+    </main>
+
+    <!-- FOOTER SECTION ================================================================================ -->
+    <footer class="footer section" id="footer">
+
+        <div class="footer-container container flex-column">
+
+            <div class="footer-frame-one flex">
+                <div class="footer-logo-container"><img src="assets/img/Footer-logo.png" alt=""></div>
+
+                <div class="footer-social-links flex">
+                    <a href="https://g.page/r/CQeMRNhcR3TTEBM/review" target="_blank" class="footer-social-link flex"><h5>Follow us:</h5><i class="ri-facebook-box-fill"></i></a>
+                    <a href="https://www.facebook.com/people/Pineywoods-Pool-Professionals/61560683017934/" target="_blank" class="footer-social-link flex"><h5>Leave a review</h5><i class="ri-google-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-frame-two flex">
+                <div class="footer-frame-three flex">
+                    <a href="tel:9363716164" onclick="trackPhoneCallClick()" class="footer-contact-link"><p>936.371.6164</p></a>
+                    <a href="mailto:info@pwpoolpros.com" class="footer-contact-link"><p>info@pwpoolpros.com</p></a>
+                </div>
+
+                <div class="footer-frame-four flex-column">
+                    <h5>Links</h5>
+                    <ul class="footer-links flex">
+                        <li class="footer-link"><a href="#home">Home</a></li>
+                        <li class="footer-link"><a href="#about">About us</a></li>
+                        <li class="footer-link"><a href="#services">Services</a></li>
+                        <li class="footer-link"><a href="#faq">FAQ's</a></li>
+                        <li class="footer-link"><a href="#gallery">Gallery</a></li>
+                        <li class="footer-link"><a href="#reviews">Reviews</a></li>
+                        <li class="footer-link"><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-signature flex">
+                <div class="flex"><p>Made by <b>ETX</b> Software</p> <div class="img-container"><img src="assets/img/code-logo.png" alt=""></div></div>
+
+                <p>2025</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- =============================================================================================== -->
 
 
     <!-- JAVASCRIPT =============================================================== -->
@@ -35,6 +638,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- MIX IT UP JS -->
+    <script src="assets/mixitup.min.js"></script>
     <!-- PAGE SPECIFIC JS -->
     <script src="assets/main.js"></script>
 </body>
